@@ -1,0 +1,19 @@
+{
+  "name": "npm1k",
+  "description": "scrape the 1,000 most-depended-upon packages from www.npmjs.com",
+  "version": "0.0.0",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "dependencies": {
+    "async.concatseries": "^0.5.2",
+    "cheerio": "^0.20.0"
+  },
+  "devDependencies": {
+    "defence-cli": "^1.0.5",
+    "replace-require-self": "^1.1.0"
+  },
+  "license": "MIT",
+  "repository": "npm1k/npm1k.js",
+  "scripts": {
+    "test": "defence README.md | replace-require-self | node"
+  }
+}
