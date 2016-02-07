@@ -3,10 +3,11 @@ module.exports = npm1k
 var cheerio = require('cheerio')
 var concatSeries = require('async.concatseries')
 var https = require('https')
+var uniq = require('array-uniq')
 
 var offsets = [ ]
 
-for (var i = 0; i < 1000; i += 36) {
+for (var i = 0; i <= 1050; i += 36) {
   offsets.push(i) }
 
 function npm1k(callback) {
@@ -22,7 +23,7 @@ function npm1k(callback) {
       if (error) {
         callback(error) }
       else {
-        callback(null, packages.slice(0, 1000)) } }) }
+        callback(null, uniq(packages).slice(0, 1000)) } }) }
 
 function packageNames(html) {
   var $ = cheerio.load(html)
