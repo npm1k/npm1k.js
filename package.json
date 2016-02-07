@@ -11,6 +11,11 @@
     "defence-cli": "^1.0.5",
     "replace-require-self": "^1.1.0"
   },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
   "license": "MIT",
   "repository": "npm1k/npm1k.js",
   "scripts": {
