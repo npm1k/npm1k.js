@@ -6,7 +6,7 @@
   "dependencies": {
     "array-uniq": "^1.0.2",
     "async.concatseries": "^0.5.2",
-    "cheerio": "^0.20.0"
+    "cheerio": "^0.22.0"
   },
   "devDependencies": {
     "defence-cli": "^1.0.5",
