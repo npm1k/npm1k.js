@@ -9,7 +9,7 @@
     "cheerio": "^0.22.0"
   },
   "devDependencies": {
-    "defence-cli": "^1.0.5",
+    "defence-cli": "^2.0.1",
     "replace-require-self": "^1.1.0"
   },
   "files": [
