@@ -5,12 +5,15 @@ var concatSeries = require('async.concatseries')
 var https = require('https')
 var uniq = require('array-uniq')
 
-var offsets = [ ]
+function getOffsets(limit) {
+  var offsets = [ ]
+  for (var i = 0; i <= limit; i += 36) {
+    offsets.push(i) }
+  return offsets
+}
 
-for (var i = 0; i <= 1050; i += 36) {
-  offsets.push(i) }
-
-function npm1k(callback) {
+function npm1k(callback, limit = 1050) {
+  var offsets = getOffsets(limit)
   concatSeries(
     offsets,
     function(offset, callback) {
