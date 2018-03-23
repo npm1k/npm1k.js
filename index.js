@@ -29,7 +29,8 @@ function npm1k(callback, limit = 1050) {
         callback(null, uniq(packages).slice(0, 1000)) } }) }
 
 function packageNames(data) {
-  return (JSON.parse(data).packages).map(pkg => pkg.name)
+  const parsed = JSON.parse(data)
+  return parsed.packages.map(pkg => pkg.name)
 }
 
 function getMostDependedPage(offset, callback) {
