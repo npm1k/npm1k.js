@@ -1,14 +1,13 @@
 {
   "name": "npm1k",
   "description": "Get the 1,000 most-depended-upon packages from www.npmjs.com",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "contributors": [
     "Gene Hazan <ghazan@microsoft.com"
   ],
   "dependencies": {
-    "array-uniq": "^1.0.2",
-    "async.concatseries": "^0.5.2"
+    "requestretry": "^1.13.0"
   },
   "devDependencies": {
     "defence-cli": "^2.0.1",
